@@ -1,0 +1,64 @@
+##. WAP TO CHECK THE GIVEN CHARACTER IS DIGIT
+num = input('enter the number: ')
+if num.isdigit():
+     print('THE GIVEN CHARACTER IS DIGIT')
+ else:
+     print('THE GIVEN CHARACTER IS NOT A DIGIT') 
+
+
+
+##. wap to check the given data is float type
+num =   input('enter the number: ')
+if type(num)== float:
+    print('THE GIVEN CHARACTER IS FLOAT')
+else:
+    print('THE GIVEN CHARACTER IS NOT FLOAT')  
+
+
+
+##. WAP TO CHECK THE GIVEN INTEGER NUMBER IS HAVING EXACTLY 2 DIGITS IN IT OR  NOT
+num= input('Enter the Number: ')
+if len(num)==2:
+    print('THE GIVEN INTEGER NUMBER IS HAVING EXACTLY 2 DIGITS')
+else:
+    print('THE GIVEN INTEGER NUMBER IS more than 2 DIGITS')
+
+
+
+
+##. WAP TO CHECK THE GIVEN DATA IS COLLECTION TYPE
+STRING IS SHOWING ERROR
+num =  eval(input('ENTER HERE: '))
+if type(num) in [float,int,complex,bool]:
+    print('THE GIVEN CHARACTER IS NOT A COLLECTION TYPE')
+elif type(num)== list:
+    print('THE GIVEN CHARACTERIS IS A COLLECTION TYPE: LIST')
+elif type(num)== set:
+    print('THE GIVEN CHARACTERIS IS A COLLECTION TYPE: set')
+elif type(num)== tuple:
+    print('THE GIVEN CHARACTERIS IS A COLLECTION TYPE: Tuple')
+elif type(num)== str:
+    print('THE GIVEN CHARACTERIS IS A COLLECTION TYPE: String')
+elif type(num)== dict:
+    print('THE GIVEN CHARACTERIS IS A COLLECTION TYPE: Dictionary')
+
+
+
+
+##. WAP TO CHECK THE LAST ELEMENT OF TUPLE IS STRING
+num =  eval(input('enter the number: '))
+if type(num)== tuple:
+    if (type(num[-1]) == str):
+        print (' last element of the typle is a string')
+    else:
+        print('Last elelemnt isnot a string')
+
+
+
+##. WAP TO CHECK THE GIVEN STRING IS PALINDROME OR NOT
+
+string =input('enter the string')
+if string == string[::-1]:
+    print('THE GIVEN STRING IS PALINDROME')
+else:
+    print('not palindrome')
